@@ -361,3 +361,41 @@ footer {
     .floating-cards-container { margin-top: -30px; }
     .contact-box { grid-template-columns: 1fr; }
 }
+/* Mobile Fixes */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 30px 5% 60px 5%;
+    }
+
+    .hero-text h1 { 
+        font-size: 28px; 
+    }
+
+    .slider-container {
+        width: 100% !important;
+        height: 220px !important;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr !important;
+        padding: 20px;
+    }
+}
