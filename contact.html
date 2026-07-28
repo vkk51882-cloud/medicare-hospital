@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medicare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span>🚑 Emergency Call: <strong>+91 98765 43210</strong></span>
+        <span>📍 Health City Medical Zone, 24/7 Available</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Medi<span>care</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="services.html">SERVICES ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                    </ul>
+                </li>
+                <li><a href="doctors.html">DOCTORS</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Contact Us & Book Appointment</h1>
+        <p>Get in touch with Medicare Hospital or schedule your doctor visit.</p>
+    </div>
+
+    <section class="section">
+        <div class="contact-box">
+            
+            <!-- Left: Info & Hospital Image -->
+            <div class="contact-left">
+                <h2>Hospital Contact Info</h2>
+                <p><strong>📍 Address:</strong> Health City Zone, Main Sector Road, India</p>
+                <p><strong>📞 Emergency:</strong> +91 98765 43210</p>
+                <p><strong>✉️ Email:</strong> support@medicare.com</p>
+                
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=600&q=80" alt="Hospital Reception" class="contact-img">
+            </div>
+
+            <!-- Right: Compact Booking Form -->
+            <div class="contact-right">
+                <h2>Schedule Appointment</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Patient Name</label>
+                        <input type="text" placeholder="Enter full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Specialist</label>
+                        <select required>
+                            <option value="">-- Choose Doctor --</option>
+                            <option>Dr. Rahul Verma (Cardiologist)</option>
+                            <option>Dr. Priya Sharma (Neurologist)</option>
+                            <option>Dr. Amit Patel (Orthopedic)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Appointment Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Medi<span>care</span></h4>
+                <p style="font-size: 14px;">Providing world-class medical facilities and expert patient care 24/7.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Emergency Contact</h4>
+                <p style="font-size: 14px;">📞 +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Medicare Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

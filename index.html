@@ -3,229 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediCare Hospital</title>
+    <title>Medicare - World Class Healthcare</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Top Emergency Bar -->
     <div class="top-bar">
-        <span>🚨 <strong>24/7 Emergency Helpline:</strong> +91 98765 43210</span>
-        <span>📍 123 Healthcare Way, Medical City</span>
+        <span>🚑 Emergency Call: <strong>+91 98765 43210</strong></span>
+        <span>📍 Health City Medical Zone, 24/7 Available</span>
     </div>
 
-    <!-- Header / Navbar -->
+    <!-- Navigation Header -->
     <header>
-        <div class="logo">
-            <h2>MediCare Hospital</h2>
-        </div>
+        <div class="logo">Medi<span>care</span></div>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                
-                <!-- Services Dropdown -->
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
                 <li class="dropdown">
-                    <a href="#services">Services <span class="arrow">&#9662;</span></a>
+                    <a href="services.html">SERVICES ▾</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#services">Emergency Care</a></li>
-                        <li><a href="#services">Cardiology Dept</a></li>
-                        <li><a href="#services">24/7 Pharmacy</a></li>
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
                     </ul>
                 </li>
-
-                <!-- Our Doctors Dropdown -->
-                <li class="dropdown">
-                    <a href="#doctors">Our Doctors <span class="arrow">&#9662;</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#doctors">Dr. Rajesh (Cardiologist)</a></li>
-                        <li><a href="#doctors">Dr. Priya (Pediatrician)</a></li>
-                        <li><a href="#doctors">Dr. Amit (Neurologist)</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="doctors.html">DOCTORS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Hero Banner -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Advanced Healthcare Solutions</h1>
-            <p>Your Health is Our Top Priority. World-class specialists at your service.</p>
-            <button id="openModalBtn" class="btn-green">Book Appointment Now</button>
+    <!-- Hero Banner with Slider -->
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Advanced Medical Care For Your Family</h1>
+            <p>24/7 Emergency response, top specialist doctors, and modern clinical diagnosis at Medicare Hospital.</p>
+            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
         </div>
-    </section>
 
-    <!-- Hospital Statistics Section (Naya Look) -->
-    <section class="stats-section">
-        <div class="stat-box">
-            <h2>15,000+</h2>
-            <p>Happy Patients</p>
+        <div class="slider-container">
+            <div class="slides">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Hospital Building">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Medical Team">
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Doctor Consultation">
+            </div>
         </div>
-        <div class="stat-box">
-            <h2>50+</h2>
-            <p>Expert Doctors</p>
-        </div>
-        <div class="stat-box">
-            <h2>24/7</h2>
-            <p>Emergency Care</p>
-        </div>
-        <div class="stat-box">
-            <h2>99%</h2>
-            <p>Positive Feedback</p>
-        </div>
-    </section>
+    </main>
 
-    <!-- Visual Features Section -->
-    <section class="hospital-info">
-        <h2>Why Choose MediCare?</h2>
-        <div class="info-grid">
-            <div class="info-card">
-                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500" alt="Hospital Room">
-                <h3>Modern Infrastructure</h3>
-                <p>Equipped with state-of-the-art ICU & Operation Theaters for advanced care.</p>
+    <!-- NEW: Floating Action Info Cards -->
+    <div class="floating-cards-container">
+        <div class="floating-grid">
+            <div class="f-card">
+                <h3>🚑 24/7 Emergency Care</h3>
+                <p>Immediate ambulance dispatch & trauma team on standby.</p>
             </div>
-            <div class="info-card">
-                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500" alt="Doctor">
-                <h3>Expert Specialists</h3>
-                <p>Over 50+ qualified, highly-rated doctors & specialists on stand-by.</p>
+            <div class="f-card">
+                <h3>⏰ OPD Timings</h3>
+                <p>Mon - Sat: 8:00 AM - 9:00 PM<br>Sun: 9:00 AM - 2:00 PM</p>
             </div>
-            <div class="info-card">
-                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=500" alt="Care">
-                <h3>24/7 Emergency Services</h3>
-                <p>Round-the-clock ambulance and immediate trauma care units.</p>
+            <div class="f-card">
+                <h3>👨‍⚕️ Online Doctor Booking</h3>
+                <p>Book instant appointments with senior specialists.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Advanced Facilities Section -->
-    <section id="facilities" class="facilities-section">
-        <h2>World-Class Hospital Facilities</h2>
-        <div class="facilities-grid">
-            <div class="facility-card">
-                <div class="icon">🏥</div>
-                <h3>Advanced ICU</h3>
-                <p>Monitored 24/7 by critical care experts with advanced life support.</p>
-            </div>
-            <div class="facility-card">
-                <div class="icon">🔬</div>
-                <h3>Diagnostic Lab</h3>
-                <p>Fully automated pathology & radiology lab for fast test reports.</p>
-            </div>
-            <div class="facility-card">
-                <div class="icon">🚑</div>
-                <h3>Express Ambulance</h3>
-                <p>GPS-enabled ICU ambulances ready for instant dispatch.</p>
-            </div>
-            <div class="facility-card">
-                <div class="icon">💊</div>
-                <h3>In-house Pharmacy</h3>
-                <p>Availability of 100% genuine medical supplies 24/7.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Doctors Profiles Section (Accessible via Navbar Dropdown) -->
-    <section id="doctors" class="doctors-section">
-        <h2>Meet Our Specialists</h2>
-        <div class="doctors-grid">
-            <div class="doctor-card">
-                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400" alt="Dr Rajesh Sharma">
-                <h3>Dr. Rajesh Sharma</h3>
-                <p class="specialty">Senior Cardiologist</p>
-                <p>15+ years experience in Heart Surgeries.</p>
-                <button class="btn-book-doc">Book Dr. Rajesh</button>
-            </div>
-            <div class="doctor-card">
-                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400" alt="Dr Priya Mehta">
-                <h3>Dr. Priya Mehta</h3>
-                <p class="specialty">Pediatrician</p>
-                <p>Specialist in Child Healthcare & Wellness.</p>
-                <button class="btn-book-doc">Book Dr. Priya</button>
-            </div>
-            <div class="doctor-card">
-                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400" alt="Dr Amit Verma">
-                <h3>Dr. Amit Verma</h3>
-                <p class="specialty">Neurologist</p>
-                <p>Expert in Brain & Spine Treatments.</p>
-                <button class="btn-book-doc">Book Dr. Amit</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Patient Reviews (Testimonials) Section -->
-    <section class="reviews-section">
-        <h2>What Our Patients Say</h2>
-        <div class="reviews-grid">
-            <div class="review-card">
-                <p class="stars">⭐⭐⭐⭐⭐</p>
-                <p class="comment">"The doctors and nursing staff were extremely supportive during my surgery. World class treatment!"</p>
-                <h4>- Rohit Kumar</h4>
-            </div>
-            <div class="review-card">
-                <p class="stars">⭐⭐⭐⭐⭐</p>
-                <p class="comment">"Fast emergency services! The booking process on the website made things so seamless."</p>
-                <h4>- Sunita Sharma</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Accordion Section -->
-    <section id="faq" class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">What are the hospital visiting hours? <span class="faq-icon">+</span></button>
-                <div class="faq-answer">
-                    <p>Visiting hours are from 10:00 AM to 1:00 PM and 5:00 PM to 8:00 PM daily.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Is emergency service available 24/7? <span class="faq-icon">+</span></button>
-                <div class="faq-answer">
-                    <p>Yes, our Emergency and Trauma Care unit is open 24 hours a day, 7 days a week.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">How can I book an online appointment? <span class="faq-icon">+</span></button>
-                <div class="faq-answer">
-                    <p>You can click on any 'Book Appointment' button on this website to open the booking form.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOOK APPOINTMENT MODAL (POPUP FORM) -->
-    <div id="appointmentModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModalBtn">&times;</span>
-            <h2>Book An Appointment</h2>
-            <form id="appointmentForm">
-                <input type="text" id="patientName" placeholder="Full Name" required>
-                <input type="tel" id="patientPhone" placeholder="Phone Number" required>
-                <select id="doctorSelect" required>
-                    <option value="">Select Doctor / Speciality</option>
-                    <option value="Dr. Rajesh Sharma (Cardiologist)">Dr. Rajesh Sharma (Cardiologist)</option>
-                    <option value="Dr. Priya Mehta (Pediatrician)">Dr. Priya Mehta (Pediatrician)</option>
-                    <option value="Dr. Amit Verma (Neurologist)">Dr. Amit Verma (Neurologist)</option>
-                </select>
-                <input type="date" id="appDate" required>
-                <button type="submit" class="btn-submit">Confirm Booking</button>
-            </form>
         </div>
     </div>
 
-    <!-- Contact & Footer -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>📍 123 Healthcare Way, Medical City | 📞 +91 98765 43210</p>
+    <!-- Core Specialities Section -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Our Core Medical Specialities</h2>
+            <p>Comprehensive healthcare facilities under one roof.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>❤️ Heart Care</h3>
+                <p>Complete cardiology checkups, 24/7 cardiac ICU, and expert heart surgeries.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Neurology</h3>
+                <p>Advanced treatment for brain, spine, and nervous system disorders.</p>
+            </div>
+            <div class="card">
+                <h3>🔬 Diagnostic Lab</h3>
+                <p>High-precision digital MRI, CT Scan, X-Ray, and automated lab reports.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Doctors Preview Section -->
+    <section class="section bg-light">
+        <div class="section-title">
+            <h2>Our Senior Specialists</h2>
+            <p>Experienced doctors ready to assist you.</p>
+        </div>
+        <div class="grid-3">
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" class="doctor-img" alt="Dr. Rahul Verma">
+                <div class="doctor-info">
+                    <h3>Dr. Rahul Verma</h3>
+                    <p style="color:#0284c7; font-weight:600;">Senior Cardiologist</p>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" class="doctor-img" alt="Dr. Priya Sharma">
+                <div class="doctor-info">
+                    <h3>Dr. Priya Sharma</h3>
+                    <p style="color:#0284c7; font-weight:600;">Neurologist Specialist</p>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" class="doctor-img" alt="Dr. Amit Patel">
+                <div class="doctor-info">
+                    <h3>Dr. Amit Patel</h3>
+                    <p style="color:#0284c7; font-weight:600;">Orthopedic Surgeon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Patient Testimonials Section -->
+    <section class="section">
+        <div class="section-title">
+            <h2>What Our Patients Say</h2>
+            <p>Real stories from people treated at Medicare Hospital.</p>
+        </div>
+        <div class="grid-3">
+            <div class="testimonial-card">
+                <p>"Medicare hospital ki cardiac team bohot attentive hai. Emergency support aur care top class tha."</p>
+                <div class="patient-name">- Rajesh Kumar</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Dr. Priya Sharma ne nervous system checkup bohot acche se kiya. Fast report service is great."</p>
+                <div class="patient-name">- Sunita Sharma</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Clean hospital premises and polite staff. Online appointment booking was quick and smooth."</p>
+                <div class="patient-name">- Anish Mehta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Multi-Column Rich Footer -->
     <footer>
-        <p>© 2026 MediCare Hospital. All Rights Reserved.</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Medi<span>care</span></h4>
+                <p style="font-size: 14px; line-height: 1.5;">Providing world-class medical facilities and expert patient care 24/7.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Departments</h4>
+                <ul>
+                    <li><a href="services.html">Cardiology</a></li>
+                    <li><a href="services.html">Neurology</a></li>
+                    <li><a href="services.html">Diagnostic Lab</a></li>
+                    <li><a href="services.html">Emergency ICU</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Emergency Contact</h4>
+                <p style="font-size: 14px;">📍 Health City Zone, Main Sector</p>
+                <p style="font-size: 14px; color:#38bdf8; font-weight:bold; margin-top:5px;">📞 +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Medicare Hospital. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
